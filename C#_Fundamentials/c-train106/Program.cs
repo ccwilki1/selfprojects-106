@@ -18,6 +18,8 @@ namespace c_train106
         -void, the method will not give anything back
     */
     {
+        private static object userInput;
+
         static void Main(string[] args)
         {
             Console.WriteLine("Hello World!");
@@ -36,6 +38,10 @@ namespace c_train106
             Console.WriteLine (Stephen.MiceName);
             Console.WriteLine (Stephen.Owner);
             Console.WriteLine (Stephen.owner);
+
+            Console.WriteLine ("what is your name?");
+            string name = Console.ReadLine();
+            Console.WriteLine ($"Hello {name}! Welcome to my world!");
 
         }
         public static int Example()
