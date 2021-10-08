@@ -1,4 +1,5 @@
 ﻿using System;
+using CollectionFunction;
 using HouseFunction;
 // need to practice this code a little more
 
@@ -38,11 +39,13 @@ namespace c_train106
             Console.WriteLine (Stephen.MiceName);
             Console.WriteLine (Stephen.Owner);
             Console.WriteLine (Stephen.owner);
-
+            
             Console.WriteLine ("what is your name?");
             string name = Console.ReadLine();
             Console.WriteLine ($"Hello {name}! Welcome to my world!");
 
+            Collection collectionObj = new Collection();
+            collectionObj.CollectionMain();
         }
         public static int Example()
         {
