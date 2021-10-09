@@ -1,4 +1,5 @@
 using System;
+using System.Collections;
 using System.Collections.Generic;
 
 namespace CollectionFunction
@@ -40,6 +41,18 @@ namespace CollectionFunction
     {
     Console.WriteLine("**the current varable is holding two or doing every other**" + i);    
     Console.WriteLine (strings [i]);    
+    }
+    // Non Generic collection
+    ArrayList nonGeneric = new ArrayList();
+
+    nonGeneric.Add(2);
+    nonGeneric.Add("This is a string");
+    nonGeneric.Add(true);
+
+    Console.WriteLine("**this is an ArrayList demo**");
+    foreach (var element in nonGeneric)
+    {
+    Console.WriteLine(element.GetType());    
     }
    }
    } 
